@@ -32,6 +32,11 @@ body::after {
     z-index: -1;
 }
 
+body::before,
+body::after {
+    pointer-events: none;
+}
+
 h1, h2, h3 {
     font-family: 'VT323', monospace;
 }
@@ -39,10 +44,10 @@ h1, h2, h3 {
 .langchange {
     background: #080825;
     width: 100%;
-    height: 2.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0.5rem 0;
 }
 
 .langchange a:visited {
