@@ -49,3 +49,8 @@ h1, h2, h3 {
 .langchange a:visited {
     color: white;
 }
+
+.hero {
+    font-size: 2rem;
+    text-align: center;
+}
