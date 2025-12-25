@@ -91,6 +91,29 @@ main {
     letter-spacing: 0.01rem;
 }
 
+
+.skills-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skill {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #0e0e40;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
 footer {
     background-color: #080825;
     bottom: 0;
