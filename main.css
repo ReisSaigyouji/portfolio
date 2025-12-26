@@ -100,7 +100,7 @@ main {
 
 .skill {
     background: white;
-    padding: 1rem;
+    padding: 0.4rem 0.6rem;
     border: 1px solid #0e0e40;
     border-radius: 5px;
     display: flex;
