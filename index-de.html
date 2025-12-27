@@ -109,22 +109,22 @@
         <section class="container">
             <h2>Kontakt</h2>
             <p>Wenn Sie mit mir zusammenarbeiten möchten oder einfach nur Hallo sagen wollen, können Sie mich gerne kontaktieren.</p>
-            <form class="contact-form" netlify>
+            <form class="contact-form" name="contact" netlify>
                 <div class="row">
                     <label>
                         Ihr Name:
-                        <input type="text">
+                        <input type="text" name="name">
                     </label>
 
                     <label>
                         Ihre E-Mail-Adresse:
-                        <input type="email">
+                        <input type="email" name="email">
                     </label>
                 </div>
 
                 <label class="message-label">
                     Nachricht:
-                    <textarea></textarea>
+                    <textarea name="message"></textarea>
                 </label>
 
                 <button type="submit">Nachricht senden</button>
