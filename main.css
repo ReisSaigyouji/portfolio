@@ -186,3 +186,60 @@ footer p {
 footer a, a:visited {
     color: white;
 }
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero {
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+    }
+
+    main {
+        padding: 1.2rem 0.6rem;
+    }
+
+    .container {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .container h3 {
+        font-size: 1.6rem;
+    }
+
+    .container p,
+    .container li {
+        font-size: 1.2rem;
+        line-height: 1.35;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        min-height: 70px;
+        gap: 0.6rem;
+    }
+
+    .contact-form .row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form textarea {
+        min-height: 100px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0.4rem;
+        text-align: center;
+    }
+}
