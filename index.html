@@ -74,6 +74,10 @@
                     <p>Bash</p>
                     <img src="img/bash.png" alt="bash logo">
                 </div>
+                <div class="skill">
+                    <p>LaTeX</p>
+                    <img src="img/latex.png" alt="latex logo" style="height: 4rem; width: 4rem">
+                </div>
             </div>
         </section>
 
@@ -104,6 +108,27 @@
 
         <section class="container">
             <h2>Contact</h2>
+            <p>If you’d like to work together or just want to say hello, feel free to reach out.</p>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+
+                <label>
+                    Your Name:
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>
+                    Your Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Message:
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 

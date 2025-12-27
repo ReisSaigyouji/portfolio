@@ -122,6 +122,10 @@ main {
     object-fit: contain;
 }
 
+a, a:visited {
+    color: black;
+}
+
 footer {
     background-color: #080825;
     bottom: 0;
@@ -142,6 +146,6 @@ footer p {
     margin: 0;
 }
 
-footer a:visited {
+footer a, a:visited {
     color: white;
 }
