@@ -51,7 +51,7 @@ h1, h2, h3 {
     padding: 0.5rem 0;
 }
 
-.langchange a:visited {
+.langchange a, a:visited {
     color: white;
 }
 
