@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap");
 
+:root {
+    --BGMAIN: #0e0e40;
+}
+
 body {
-    background: #0e0e40;
+    background: var(--BGMAIN);
     color: white;
     padding: 0;
     margin: 0;
@@ -109,7 +113,7 @@ main {
 .skill {
     background: white;
     padding: 0.6rem 0.8rem;
-    border: 1px solid #0e0e40;
+    border: 1px solid var(--BGMAIN);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -157,7 +161,7 @@ footer {
 .contact-form textarea {
     font: inherit;
     padding: 0.4rem;
-    border: 1px solid #0e0e40;
+    border: 1px solid var(--BGMAIN);
     border-radius: 4px;
     background: white;
 }
