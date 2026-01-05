@@ -46,6 +46,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+a, a:visited, a:hover, a:active {
+    color: black;
+}
+
 .langchange {
     background: #080825;
     width: 100%;
@@ -56,7 +60,11 @@ h1, h2, h3 {
     font-size: 1.4rem;
 }
 
-.langchange a, a:visited {
+.langchange a {
+    color: white;
+}
+
+.langchange a:visited {
     color: white;
 }
 
@@ -103,7 +111,6 @@ main {
     letter-spacing: 0.01rem;
 }
 
-
 .skills-grid {
     display: grid;
     gap: 1rem;
@@ -125,10 +132,6 @@ main {
     width: 2rem;
     height: 2rem;
     object-fit: contain;
-}
-
-a, a:visited {
-    color: black;
 }
 
 footer {
@@ -189,7 +192,7 @@ footer p {
     margin: 0;
 }
 
-footer a, a:visited {
+footer a, footer a:visited {
     color: white;
 }
 
