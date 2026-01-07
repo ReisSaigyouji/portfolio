@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Share Tech Mono', monospace;
+    letter-spacing: .01rem;
 }
 
 body::before {
@@ -46,8 +47,13 @@ h1, h2, h3 {
     text-align: center;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited {
     color: black;
+}
+
+a:hover {
+    color: #70b5ed;
+    transform: translateY(-1px);
 }
 
 .langchange {
@@ -96,6 +102,7 @@ main {
     border-bottom: 2px solid rgba(112, 181, 237, 0.4);
     padding-bottom: 0.5rem;
     font-size: 2.5rem;
+    letter-spacing: .02rem;
 }
 
 .container h3 {
@@ -127,6 +134,12 @@ main {
     align-items: center;
     gap: 0;
     min-height: 90px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
 }
 
 .skill-main {
