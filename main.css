@@ -66,12 +66,10 @@ a:hover {
     font-size: 1.4rem;
 }
 
-.langchange a {
+.langchange button {
+    background-color: #080825;
     color: white;
-}
-
-.langchange a:visited {
-    color: white;
+    border: white 1px solid;
 }
 
 .hero {

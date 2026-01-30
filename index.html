@@ -13,30 +13,31 @@
     <header>
         <div class="langchange">
             <nav style="padding-right: 1rem;">
-                <a href="index-de.html">Deutsch 🇩🇪</a>
+                <button id="langToggle" data-i18n="language.switch">Deutsch 🇩🇪</button>
+
             </nav>
         </div>
         <section class="hero">
-            <h1>Hello! My name is Oleg Hotau</h1>
-            <p>Beginner web developer with an interest in cybersecurity.</p>
+            <h1 data-i18n="hero.title">Hello! My name is Oleg Hotau</h1>
+            <p data-i18n="hero.subtitle">Beginner web developer with an interest in cybersecurity.</p>
         </section>
     </header>
 
     <main>
         <section class="container">
-            <h2>About me</h2>
-            <p>I am an aspiring web developer with a current focus on frontend development.
+            <h2 data-i18n="about.title">About me</h2>
+            <p data-i18n="about.text1">I am an aspiring web developer with a current focus on frontend development.
                 In parallel, I actively study cybersecurity and system administration, dedicating
                 a significant amount of time to developing my skills in these areas.
             </p>
-            <p>
+            <p data-i18n="about.text2">
                 I create websites both as a hobby and professionally, and I am always open to new projects or collaborations.
-                If you have an idea to discuss, feel free to <a href="#contact">contact</a> me.
+                If you have an idea to discuss, feel free to contact me.
             </p>
         </section>
 
         <section class="container">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
             <p><strong>Frontend</strong></p>
             <div class="skills-grid">
                 <div class="skill">
@@ -63,7 +64,7 @@
                     <p class="skill-level">🟩⬛️⬛️⬛️⬛️</p>
                 </div>
             </div>
-            <p><strong>Programming & Tools</strong></p>
+            <p data-i18n="skills.prog"><strong>Programming & Tools</strong></p>
             <div class="skills-grid">
                 <div class="skill">
                     <div class="skill-main">
@@ -116,52 +117,52 @@
         </section>
 
         <section class="container">
-            <h2>Tech Setup</h2>
-            <p>This setup supports my daily development, learning, and frontend projects.</p>
-            <h3>Main Workstation</h3>
+            <h2 data-i18n="tech.title">Tech Setup</h2>
+            <p data-i18n="tech.description">This setup supports my daily development, learning, and frontend projects.</p>
+            <h3 data-i18n="tech.mainpc">Main Workstation</h3>
             <ul>
                 <li>Intel Core i5-12400F, RX 7600</li>
                 <li>32 GB DDR5 RAM</li>
             </ul>
 
-            <h3>Mobile Work Environment</h3>
+            <h3 data-i18n="tech.laptop">Mobile Work Environment</h3>
             <ul>
                 <li>Intel Core i7-1255U, Iris Xe Graphics</li>
                 <li>24 GB DDR5 RAM</li>
             </ul>
 
-            <h3>Software & Tools</h3>
+            <h3 data-i18n="tech.software">Software & Tools</h3>
             <ul>
-                <li>Neovim - my primary editor for coding and learning</li>
-                <li>WebStorm / VS Code - used for frontend and project work</li>
-                <li>Git & GitHub - version control and collaboration</li>
-                <li>Arch Linux - my primary OS and development environment</li>
-                <li>Linux terminal - daily use of the system</li>
+                <li data-i18n="tech.nvim">Neovim - my primary editor for coding and learning</li>
+                <li data-i18n="tech.ide">WebStorm / VS Code - used for frontend and project work</li>
+                <li data-i18n="tech.git">Git & GitHub - version control and collaboration</li>
+                <li data-i18n="tech.lin">Arch Linux - my primary OS and development environment</li>
+                <li data-i18n="tech.terminal">Linux terminal - daily use of the system</li>
             </ul>
         </section>
 
         <section class="container" id="contact">
-            <h2>Contact</h2>
-            <p>If you’d like to work together or just want to say hello, feel free to reach out.</p>
+            <h2 data-i18n="contact.title">Contact</h2>
+            <p data-i18n="contact.text">If you’d like to work together or just want to say hello, feel free to reach out.</p>
             <form class="contact-form" netlify>
                 <div class="row">
                     <label>
-                        Your Name:
+                        <span data-i18n="contact.name">Your Name:</span>
                         <input type="text" name="name">
                     </label>
 
                     <label>
-                        Your Email:
+                        <span data-i18n="contact.email">Your Email:</span>
                         <input type="email" name="email">
                     </label>
                 </div>
 
                 <label class="message-label">
-                    Message:
+                    <span data-i18n="contact.message">Message:</span>
                     <textarea name="message"></textarea>
                 </label>
 
-                <button type="submit" id="Btn">Send Message</button>
+                <button type="submit" id="Btn" data-i18n="contact.button">Send Message</button>
             </form>
         </section>
     </main>
@@ -169,9 +170,10 @@
     <footer>
         <div class="footer-content">
             <p>&lt;&lt;&lt; &copy; Oleg Hotau &gt;&gt;&gt;</p>
-            <p><a href="#">Back to the top</a></p>
+            <p><a href="#" data-i18n="footer.top">Back to the top</a></p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
